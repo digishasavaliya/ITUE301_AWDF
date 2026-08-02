@@ -1,0 +1,22 @@
+{
+  "name": "task-manager-api-ROLLNO",
+  "version": "1.0.0",
+  "description": "RESTful API for managing tasks using Node.js, Express.js, and in-memory storage.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "nodejs",
+    "tasks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
