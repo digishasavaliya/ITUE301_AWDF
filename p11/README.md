@@ -1,6 +1,6 @@
 # Practical 11 — Dockerized Full-Stack Task Manager
 
-This project containerizes the existing React/Vite frontend, Express/Mongoose backend, and MongoDB database. The Practical 1–10 features remain in the original application folders, including JWT authentication, protected task CRUD, in-memory caching, and EventEmitter notifications.
+This project contains a React/Vite frontend in `24IT087-portfolio`, an Express/Mongoose backend in `task-manager-api-24IT087`, and a Docker Compose setup for running them with MongoDB. Each app folder contains its Dockerfile and `.dockerignore`, so the same source folders support both local development and container builds. Features include JWT authentication, protected task CRUD, in-memory caching, and EventEmitter notifications.
 
 ## Prerequisites
 
@@ -94,4 +94,4 @@ To check persistence, create a task, run `docker compose down`, run `docker comp
 
 ## Local development remains supported
 
-The original local workflow is unchanged. Start MongoDB locally, use the existing backend `.env` with `MONGO_URI=mongodb://localhost:27017/AWDF_P5`, run `node server.js` in `task-manager-api-24IT087`, and run `npm run dev` in `24IT087-portfolio`. The container-specific URI is supplied only by Compose.
+For local development, start MongoDB locally, use the backend `.env` with `MONGO_URI=mongodb://localhost:27017/AWDF_P5`, run `node server.js` in `task-manager-api-24IT087`, and run `npm run dev` in `24IT087-portfolio` (on PowerShell, use `npm.cmd run dev` if script execution is restricted). Compose builds directly from these same folders and supplies its own MongoDB URI.

@@ -18,8 +18,7 @@ services:
 
   backend:
     build:
-      context: .
-      dockerfile: backend/Dockerfile
+      context: ./task-manager-api-24IT087
     container_name: task-manager-backend
     restart: unless-stopped
     ports:
@@ -44,8 +43,7 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: frontend/Dockerfile
+      context: ./24IT087-portfolio
       args:
         VITE_API_URL: http://localhost:5000
     container_name: task-manager-frontend
