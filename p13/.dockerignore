@@ -1,0 +1,13 @@
+**/node_modules
+**/.env
+**/.env.*
+!.env.example
+.git
+**/dist
+**/build
+**/coverage
+**/*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
